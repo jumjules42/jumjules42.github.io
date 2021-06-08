@@ -1,1654 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Julian Vazquez | Full Stack Developer</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap"
-            rel="stylesheet"
-        />
+        <!-- ===== SWIPER CSS ===== -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
-            rel="stylesheet"
-        />
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
-        <link rel="stylesheet" href="css/animate.css" />
-
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-
-        <link rel="stylesheet" href="css/aos.css" />
-
-        <link rel="stylesheet" href="css/ionicons.min.css" />
-
-        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-        <link rel="stylesheet" href="css/jquery.timepicker.css" />
-
-        <link rel="stylesheet" href="css/flaticon.css" />
-        <link rel="stylesheet" href="css/icomoon.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <title>Portfolio Personal Complete</title>
     </head>
     <body>
-        <nav id="navbar" class="navbar">
-            <ul class="nav-menu">
-                <li>
-                    <a data-scroll="home" href="#home" class="dot active">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll="about" href="#about" class="dot">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll="services" href="#services" class="dot">
-                        <span>Skills</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll="work" href="#work" class="dot">
-                        <span>Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a data-scroll="contact" href="#contact" class="dot">
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End Nav Section -->
+        <!--===== SCROLL TOP =====-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+        
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                
+                <a href="#" class="nav__logo">Clay Doe</a>
 
-        <!-- Start Home Section -->
-        <section
-            id="home"
-            class="hero-wrap js-fullheight"
-            style="background-image: url(images/bg-header.jpg)"
-            data-stellar-background-ratio="0.5"
-        >
-            <div class="overlay"></div>
-            <div class="container">
-                <div
-                    class="
-                        row
-                        no-gutters
-                        slider-text
-                        js-fullheight
-                        align-items-center
-                        justify-content-center
-                    "
-                >
-                    <div
-                        class="col-lg-7 ftco-animate d-flex align-items-center"
-                    >
-                        <div class="text text-center">
-                            <h1 class="logo">
-                                <a href="index.html"
-                                    ><span
-                                        ><img
-                                            src="images/me.jpg"
-                                            alt="Me profile picture."
-                                            width="100px"
-                                            height="100px"
-                                            style="border-radius: 50%" /></span
-                                    >Julian Vazquez<small
-                                        >Developer / Argentina</small
-                                    ></a
-                                >
-                            </h1>
-                            <h1 class="mb-4">Full Stack Developer</h1>
-                            <p class="mb-4">
-                                I develop, design, plan, solve problems, <br />
-                                and I love what I do.
-                            </p>
-                            <p class="mt-5">
-                                <a
-                                    href="https://drive.google.com/file/d/1xrg8sYOcRlgjhbdXroGAX4fUXuWQVsPO/view?usp=sharing"
-                                    target="_blank"
-                                    class="btn-custom"
-                                    >My resume
-                                    <span
-                                        class="ion-ios-arrow-round-forward"
-                                    ></span
-                                ></a>
-                            </p>
-                        </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" >
+                    <i class='bx bx-menu ' id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, My name is</span>
+                        <h1 class="home__name">Clay Doe</h1>
+                        <span class="home__profession">Web Developer</span>
+                        <a download="" href="assets/pdf/Clay-Doe-Cv.pdf" class="button button-light home__button">Download Cv</a>
+                    </div>
+                    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-icon"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="assets/img/home.jpg" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End Home Section -->
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section bd-container" id="about">
+                <span class="section-subtitle">My history</span>
+                <h2 class="section-title">About me</h2>
 
-        <!-- Start About Me Section -->
-        <section class="ftco-about img ftco-section" id="about">
-            <div class="container">
-                <div class="row d-flex no-gutters">
-                    <div class="col-md-6 col-lg-6 d-flex">
-                        <div class="img-about img d-flex align-items-stretch">
-                            <div class="overlay"></div>
-                            <div
-                                class="
-                                    img img-video
-                                    d-flex
-                                    align-self-stretch align-items-center
-                                "
-                                style="
-                                    background-image: url(images/about-2.jpg);
-                                "
-                            >
-                                <div class="video justify-content-center">
-                                    <a
-                                        href="https://vimeo.com/45830194"
-                                        class="
-                                            icon-video
-                                            popup-vimeo
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                        "
-                                    >
-                                        <span class="ion-ios-play"></span>
-                                    </a>
-                                </div>
-                            </div>
+                <div class="about__container  bd-grid">
+                    <div class="about__data bd-grid">
+                        <p class="about__description"><span>Hello, I am <br> </span> Freelance frontend developer, I am passionate about creating and developing web interfaces. With years of experience in web design and development.</p>
+
+                        <div>
+                            <span class="about__number">05</span>
+                            <span class="about__achievement">Years off Experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__number">29+</span>
+                            <span class="about__achievement">Projects completes</span>
+                        </div>
+
+                        <div>
+                            <span class="about__number">07</span>
+                            <span class="about__achievement">Best work awards</span>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 pl-md-5">
-                        <div class="heading-section ftco-animate">
-                            <h2 class="mb-4">
-                                Hi, I'm Julian. Nice to meet you.
-                            </h2>
-                            <p>
-                                I started programming in early 2016 on paper
-                                making flowcharts in C.
-                            </p>
-                            <p>
-                                I had no idea it was a variable, loops or
-                                conditionals, but the idea of ​​putting together
-                                an instruction structure fascinated me.
-                            </p>
-                            <p>
-                                Little by little I progressed until I came
-                                across Javascript where I decided to take
-                                development as a path, one that would lead me to
-                                the professional world.
-                            </p>
-                            <p>
-                                I love simple things, challenges and learning
-                                new technologies and methods.
-                            </p>
-                            <p>My goal is to be better than I was yesterday.</p>
 
-                            <div
-                                class="counter-wrap ftco-animate d-flex my-md-4"
-                            >
-                                <div class="text">
-                                    <p class="mb-4">
-                                        <span id="numberDays" class="number"
-                                            >0</span
-                                        >
-                                        <span
-                                            >Days trying to be a better
-                                            developer</span
-                                        >
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex w-100">
-                                <div
-                                    class="img img-about-2 mr-2"
-                                    style="
-                                        background-image: url(images/desktop-1.jpg);
-                                    "
-                                ></div>
-                                <div
-                                    class="img img-about-2 ml-2"
-                                    style="
-                                        background-image: url(images/desktop_3.jpg);
-                                    "
-                                ></div>
-                            </div>
-                            <blockquote class="blockquote mt-5">
-                                <q class="mb-2">
-                                    The greatest glory in living lies not in
-                                    never falling, but in rising every time we
-                                    fall.
-                                </q>
-                                <span>&mdash; Nelson Mandela</span>
-                            </blockquote>
-                        </div>
-                    </div>
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
                 </div>
-            </div>
-        </section>
-        <!-- End About Me Section -->
+            </section>
 
-        <!-- Start Services Section -->
-        <section id="services" class="ftco-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div
-                                class="
-                                    col-md-5
-                                    heading-section
-                                    ftco-animate
-                                    pb-5
-                                "
-                            >
-                                <h2 class="mb-4">Technologies I've learned</h2>
-                                <p>
-                                    Since the beginning of this year (2021)
-                                    <br />
-                                    I learned a lot of new technologies.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row w-100">
-                            <div class="col-md-4">
-                                <div
-                                    class="
-                                        media
-                                        block-6
-                                        services
-                                        d-block
-                                        ftco-animate
-                                    "
-                                >
-                                    <img
-                                        src="./images/icons8-source-code-96.png"
-                                        alt="Frontend icon."
-                                        width="50px"
-                                        height="50px"
-                                    />
-                                    <div class="media-body">
-                                        <h3 class="heading mb-3">
-                                            Front-end &amp; UX/UI
-                                        </h3>
-                                        <div class="container">
-                                            <div class="row">
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-html-5.svg"
-                                                        alt="HTML5"
-                                                    />
-                                                    <p>HTML5</p>
-                                                </article>
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-css3.svg"
-                                                        alt="CSS3"
-                                                    />
-                                                    <p>CSS3</p>
-                                                </article>
-                                            </div>
-                                            <div class="row">
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-react.svg"
-                                                        alt="React"
-                                                    />
-                                                    <p>React</p>
-                                                </article>
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-redux.svg"
-                                                        alt="Redux"
-                                                    />
-                                                    <p>Redux</p>
-                                                </article>
-                                            </div>
-                                            <div class="row">
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-bootstrap.svg"
-                                                        alt="Bootstrap"
-                                                    />
-                                                    <p>Bootstrap</p>
-                                                </article>
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-material-ui.svg"
-                                                        alt="Material-UI"
-                                                    />
-                                                    <p>Material-UI</p>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
+            <!--===== QUALIFICATION =====-->
+            <section class="qualification bd-container section">
+                <span class="section-subtitle">Experience and education</span>
+                <h2 class="section-title">Qualification</h2>
+
+                <div class="qualification__container bd-grid">
+                    <div class="qualification__content">
+                        <h2 class="qualification__title">
+                            <i class='bx bx-briefcase-alt qualification__title-icon'></i> 
+                            Work Experience
+                        </h2>
+
+                        <div class="bd-grid">
+                            <div class="qualification__data">
+                                <h3 class="qualification__area">Senior Front End Developer</h3>
+    
+                                <div class="qualification__box">
+                                    <span class="qualification__work">
+                                        <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                        Adobe - New York
+                                    </span>
+
+                                    <span class="qualification__work">
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
+                                        Jan 2019 - Aug 2019
+                                    </span>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div
-                                    class="
-                                        media
-                                        block-6
-                                        services
-                                        d-block
-                                        ftco-animate
-                                    "
-                                >
-                                    <div class="icon">
-                                        <img
-                                            src="./images/icons8-backend-development-96.png"
-                                            alt="Backend icon."
-                                            width="50px"
-                                            height="50px"
-                                        />
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="heading mb-3">
-                                            Back-end &amp; Databases
-                                        </h3>
-                                        <div class="container">
-                                            <article class="row">
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-nodejs.svg"
-                                                        alt="NodeJS"
-                                                    />
-                                                    <p>NodeJS</p>
-                                                </div>
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/Expressjs.png"
-                                                        alt="expressJS"
-                                                    />
-                                                    <p>expressJS</p>
-                                                </div>
-                                            </article>
-                                            <article class="row">
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-nginx.svg"
-                                                        alt="Nginx"
-                                                    />
-                                                    <p>Nginx</p>
-                                                </div>
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-firebase.svg"
-                                                        alt="Firebase"
-                                                    />
-                                                    <p>Firebase</p>
-                                                </div>
-                                            </article>
-                                            <article class="row">
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/supabase.svg"
-                                                        alt="Supabase"
-                                                    />
-                                                    <p>Supabase</p>
-                                                </div>
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-google-cloud.svg"
-                                                        alt="Google Cloud"
-                                                    />
-                                                    <p>Cloud</p>
-                                                </div>
-                                            </article>
-                                            <article class="row">
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-postman-api.svg"
-                                                        alt="Postman"
-                                                    />
-                                                    <p>Postman</p>
-                                                </div>
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-postgresql (1).svg"
-                                                        alt="PostgreSQL"
-                                                    />
-                                                    <p>Postgres</p>
-                                                </div>
-                                            </article>
-                                            <article class="row">
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-mysql-logo.svg"
-                                                        alt="MySQL"
-                                                    />
-                                                    <p>MySQL</p>
-                                                </div>
-                                                <div class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/sqlite.png"
-                                                        alt="SQLite3"
-                                                    />
-                                                    <p>SQLite3</p>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
+    
+                            <div class="qualification__data">
+                                <h3 class="qualification__area">Ui / Ux Designer</h3>
+    
+                                <div class="qualification__box">
+                                    <span class="qualification__work">
+                                        <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                        Figma - Lima
+                                    </span>
+      
+                                    <span class="qualification__work">
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
+                                        Oct 2019 - Dec 2019
+                                    </span>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div
-                                    class="
-                                        media
-                                        block-6
-                                        services
-                                        d-block
-                                        ftco-animate
-                                    "
-                                >
-                                    <div class="icon">
-                                        <img
-                                            src="./images/icons8-devops-100.png"
-                                            alt="Databases icon."
-                                            width="50px"
-                                            height="50px"
-                                        />
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="heading mb-3">DevOps</h3>
-                                        <div class="container">
-                                            <section class="row">
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-git.svg"
-                                                        alt="Git"
-                                                    />
-                                                    <p>Git</p>
-                                                </article>
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-github.svg"
-                                                        alt="Github"
-                                                    />
-                                                    <p>Github</p>
-                                                </article>
-                                            </section>
-                                            <section class="row">
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-docker.svg"
-                                                        alt="Docker"
-                                                    />
-                                                    <p>Docker</p>
-                                                </article>
-                                                <article class="col">
-                                                    <img
-                                                        width="40px"
-                                                        height="40px"
-                                                        src="./images/icons8-console-100.png"
-                                                        alt="Console / Bash"
-                                                    />
-                                                    <p>Console / Bash</p>
-                                                </article>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div
-                            class="img w-100"
-                            style="background-image: url(images/me_2.jpg)"
-                        ></div>
-                    </div>
-                </div>
-                <div class="row progress-circle pt-md-5">
-                    <div class="col-md-7 order-md-last py-md-5">
-                        <div class="p-md-4 mt-4">
-                            <div class="col-md-8 ftco-animate">
-                                <h3 class="heading mb-3">
-                                    My soft skills that are in constantly
-                                    leveling up.
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Lidership</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="75"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                75<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Team work</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="80"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                80<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Curiosity</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="95"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                95<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Teach</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="88"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                88<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">
-                                        Communication
-                                    </h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="60"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                60<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">
-                                        Adaptability
-                                    </h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="77"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                77<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Creativity</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="80"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                80<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">
-                                        Critical Think
-                                    </h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="79"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                79<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                                <div class="">
-                                    <h2 class="text-center mb-4">Resilience</h2>
-
-                                    <!-- Progress bar 1 -->
-                                    <div
-                                        class="progress mx-auto"
-                                        data-value="90"
-                                    >
-                                        <span class="progress-left">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span
-                                                class="
-                                                    progress-bar
-                                                    border-primary
-                                                "
-                                            ></span>
-                                        </span>
-                                        <div
-                                            class="
-                                                progress-value
-                                                w-100
-                                                h-100
-                                                rounded-circle
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <div class="h5">
-                                                90<sup class="small">%</sup>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-stretch">
-                        <div
-                            class="img w-100"
-                            style="background-image: url(images/skills.jpg)"
-                        ></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Services Section -->
-
-        <!-- Start Testimonials Section -->
-        <section id="work" class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div
-                        class="
-                            col-md-4
-                            heading-section
-                            text-center
-                            ftco-animate
-                            pb-5
-                        "
-                    >
-                        <h2 class="mb-4">My recent projects</h2>
-                        <p>Projects in dev and finished projects.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid px-md-0">
-                <div class="row no-gutters">
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/pokeapp_1.png)"
-                        >
-                            <a
-                                href="images/pokeapp_1.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>PokeApp</span>
-                                    <h2>
-                                        <a href="#">Landing page</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/pokeapp_2.png)"
-                        >
-                            <a
-                                href="images/pokeapp_2.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>PokeApp</span>
-                                    <h2>
-                                        <a href="#">Home</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background: url(images/pokeapp_3.png)"
-                        >
-                            <a
-                                href="images/pokeapp_3.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>PokeApp</span>
-                                    <h2>
-                                        <a href="#">Pokemon details</a>
-                                    </h2>
+    
+                            <div class="qualification__data">
+                                <h3 class="qualification__area">Web Designer</h3>
+    
+                                <div class="qualification__box">
+                                    <span class="qualification__work">
+                                        <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                        Apple Inc - New York
+                                    </span>
+    
+                                    <span class="qualification__work">
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
+                                        Jan 2020 - May 2020
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background: url(images/integra_2.png)"
-                        >
-                            <a
-                                href="images/integra_2.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>Integra Platform</span>
-                                    <h2>
-                                        <a href="#">Landing page</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/integra_1.png)"
-                        >
-                            <a
-                                href="images/integra_1.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>Integra Platform</span>
-                                    <h2>
-                                        <a href="#">Login</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/homeAff.png)"
-                        >
-                            <a
-                                href="images/integra_3.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>Integra Platform</span>
-                                    <h2>
-                                        <a href="#">Affiliate Dashboard</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="qualification__content">
+                        <h2 class="qualification__title">
+                            <i class='bx bx-book-bookmark qualification__title-icon'></i>
+                            Education
+                        </h2>
 
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/weather_1.png)"
-                        >
-                            <a
-                                href="images/weather_1.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>Weather App</span>
-                                    <h2>
-                                        <a href="#">Weather App</a>
-                                    </h2>
+                        <div class="bd-grid">
+                            <div class="qualification__data">
+                                <h3 class="qualification__area">Computer technician</h3>
+    
+                                <div class="qualification__box">
+                                    <span class="qualification__work">
+                                        <i class='bx bx-book-alt qualification__icon'></i>
+                                        Lima - Computer institute
+                                    </span>
+    
+                                    <span class="qualification__work">                                      
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
+                                        Apr 2015 - Dec 2018
+                                    </span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/sql_code.png)"
-                        >
-                            <a
-                                href="images/sql_code.png"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>SQL</span>
-                                    <h2>
-                                        <a href="#">SQL code</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div
-                            class="model img d-flex align-items-end"
-                            style="background-image: url(images/ajax.jpeg)"
-                        >
-                            <a
-                                href="images/ajax.jpeg"
-                                class="
-                                    icon
-                                    image-popup
-                                    d-flex
-                                    justify-content-center
-                                    align-items-center
-                                "
-                            >
-                                <span class="icon-expand"></span>
-                            </a>
-                            <div class="desc w-100 px-4">
-                                <div class="text w-100 mb-3">
-                                    <span>Ajax</span>
-                                    <h2>
-                                        <a href="#">Ajax code</a>
-                                    </h2>
+    
+                            <div class="qualification__data">
+                                <h3 class="qualification__area">Master in web developer</h3>
+    
+                                <div class="qualification__box">
+                                    <span class="qualification__work">
+                                        <i class='bx bx-book-alt qualification__icon'></i>
+                                        Madrid - Design institute
+                                    </span>
+    
+                                    <span class="qualification__work">
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
+                                        Jan 2019 - Aug 2020
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End Project Section -->
+            </section>
 
-        <!-- <section class="ftco-section testimony-section" id="testimonial">
-            <div class="container">
-                <div class="row justify-content-center mb-5 pb-3">
-                    <div class="col-md-4 heading-section ftco-animate">
-                        <span class="subheading">Testimony</span>
-                        <h2 class="mb-4">Our satisfied customer says</h2>
-                        <p>
-                            Far far away, behind the word mountains, far from
-                            the countries Vokalia and Consonantia, there live
-                            the blind texts. Separated they live in
-                        </p>
+            <!--===== SERVICES =====-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">What i offer</span>
+                <h2 class="section-title">Services</h2>
+
+                <div class="services__container bd-grid">
+                    <div class="services__data">
+                        <i class='bx bx-palette services__icon'></i>
+                        <h3 class="services__title">Ui/Ux Design</h3>
+                        <p class="services__description">Service that I offer and work, with years of experience in the work area.</p>
+                        <a href="#" class="button">Know More</a>
+                    </div>
+
+                    <div class="services__data">
+                        <i class='bx bx-laptop services__icon'></i>
+                        <h3 class="services__title">Web development</h3>
+                        <p class="services__description">Service that I offer and work, with years of experience in the work area.</p>
+                        <a href="#" class="button">Know More</a>
+                    </div>
+
+                    <div class="services__data">
+                        <i class='bx bx-pen services__icon'></i>
+                        <h3 class="services__title">Graphic Design</h3>
+                        <p class="services__description">Service that I offer and work, with years of experience in the work area.</p>
+                        <a href="#" class="button">Know More</a>
                     </div>
                 </div>
-                <div class="row ftco-animate">
-                    <div class="col-md-12">
-                        <div class="carousel-testimony owl-carousel">
-                            <div class="item">
-                                <div class="testimony-wrap p-4 pb-5">
-                                    <div
-                                        class="user-img mb-4"
-                                        style="
-                                            background-image: url(images/person_1.jpg);
-                                        "
-                                    >
-                                        <span
-                                            class="
-                                                quote
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-5 pl-4 line">
-                                            Far far away, behind the word
-                                            mountains, far from the countries
-                                            Vokalia and Consonantia, there live
-                                            the blind texts.
-                                        </p>
-                                        <div class="pl-5">
-                                            <p class="name">Garreth Smith</p>
-                                            <span class="position"
-                                                >CEO Founder of Commercial
-                                                Building</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap p-4 pb-5">
-                                    <div
-                                        class="user-img mb-4"
-                                        style="
-                                            background-image: url(images/person_2.jpg);
-                                        "
-                                    >
-                                        <span
-                                            class="
-                                                quote
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-5 pl-4 line">
-                                            Far far away, behind the word
-                                            mountains, far from the countries
-                                            Vokalia and Consonantia, there live
-                                            the blind texts.
-                                        </p>
-                                        <div class="pl-5">
-                                            <p class="name">Garreth Smith</p>
-                                            <span class="position"
-                                                >CEO Founder of Interior
-                                                Design</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap p-4 pb-5">
-                                    <div
-                                        class="user-img mb-4"
-                                        style="
-                                            background-image: url(images/person_3.jpg);
-                                        "
-                                    >
-                                        <span
-                                            class="
-                                                quote
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-5 pl-4 line">
-                                            Far far away, behind the word
-                                            mountains, far from the countries
-                                            Vokalia and Consonantia, there live
-                                            the blind texts.
-                                        </p>
-                                        <div class="pl-5">
-                                            <p class="name">Garreth Smith</p>
-                                            <span class="position"
-                                                >Exterior Designer</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap p-4 pb-5">
-                                    <div
-                                        class="user-img mb-4"
-                                        style="
-                                            background-image: url(images/person_1.jpg);
-                                        "
-                                    >
-                                        <span
-                                            class="
-                                                quote
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-5 pl-4 line">
-                                            Far far away, behind the word
-                                            mountains, far from the countries
-                                            Vokalia and Consonantia, there live
-                                            the blind texts.
-                                        </p>
-                                        <div class="pl-5">
-                                            <p class="name">Garreth Smith</p>
-                                            <span class="position"
-                                                >Landscape Designer</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap p-4 pb-5">
-                                    <div
-                                        class="user-img mb-4"
-                                        style="
-                                            background-image: url(images/person_1.jpg);
-                                        "
-                                    >
-                                        <span
-                                            class="
-                                                quote
-                                                d-flex
-                                                align-items-center
-                                                justify-content-center
-                                            "
-                                        >
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-5 pl-4 line">
-                                            Far far away, behind the word
-                                            mountains, far from the countries
-                                            Vokalia and Consonantia, there live
-                                            the blind texts.
-                                        </p>
-                                        <div class="pl-5">
-                                            <p class="name">Garreth Smith</p>
-                                            <span class="position"
-                                                >System Analyst</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            </section>
+            
+            <!--===== PROJECT IN MIND =====-->
+            <section class="project bd-container section">
+                <div class="project__container bd-grid">
+                    <div class="project__data">
+                        <i class='bx bx-chat project__icon'></i>
+                        <div>
+                            <h2 class="project__title">Project in mind</h2>
+                            <p class="project__description">Hire me to carry out the following projects.</p>
+                        </div>
+                        <div>
+                            <a href="#contact" class="button button-white">Hire me</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section>
 
-        <!-- Start Contact Section -->
-        <section class="ftco-section contact-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center mb-5 pb-3">
-                    <div
-                        class="
-                            col-md-4
-                            heading-section
-                            text-center
-                            ftco-animate
-                        "
-                    >
-                        <h2 class="mb-4">Contact Me!</h2>
-                        <p>I will answer you as soon as I can!</p>
-                    </div>
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio bd-container section" id="portfolio">
+                <span class="section-subtitle">My recent works</span>
+                <h2 class="section-title">Portfolio</h2>
+                
+                <div class="portfolio__nav">
+                    <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                    <span class="portfolio__item" data-filter=".web">Web</span>
+                    <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+                    <span class="portfolio__item" data-filter=".app">App</span>
                 </div>
 
-                <div class="row mb-5">
-                    <div class="col-md-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box text-center p-4">
-                            <div
-                                class="
-                                    icon
-                                    d-flex
-                                    align-items-center
-                                    justify-content-center
-                                "
-                            >
-                                <span class="icon-map-signs"></span>
-                            </div>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__content mix web">
+                        <a href="#"><img src="assets/img/work1.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Web development</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix web">
+                        <a href="#"><img src="assets/img/work2.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Web development</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix ux">
+                        <a href="#"><img src="assets/img/work3.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Ux design</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__content mix ux">
+                        <a href="#"><img src="assets/img/work4.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Ux design</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix app">
+                        <a href="#"><img src="assets/img/work5.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Mobile app</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix app">
+                        <a href="#"><img src="assets/img/work6.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Mobile app</span>
+                            <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                            <a href="#" class="button button-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== TESTIMONIAL =====-->
+            <section class="testimonial bd-container section">
+                <span class="section-subtitle">My client saying</span>
+                <h2 class="section-title">Testimonial</h2>
+
+                <div class="testimonial__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__content swiper-slide">
+                            <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Nik Holly</h3>
+                            <span class="testimonial__client">Client</span>
+                            <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommend it.</p>
+                        </div>
+    
+                        <div class="testimonial__content swiper-slide">
+                            <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Sara Mill</h3>
+                            <span class="testimonial__client">Client</span>
+                            <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommend it.</p>
+                        </div>
+    
+                        <div class="testimonial__content swiper-slide">
+                            <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Clay Mitchell</h3>
+                            <span class="testimonial__client">Client</span>
+                            <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommend it.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--===== CONTACTME =====-->
+            <section class="contact bd-container section" id="contact">
+                <span class="section-subtitle">For projects</span>
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact__container bd-grid">
+
+                    <div class="contact__content bd-grid">
+                        <div class="contact__box">
+                            <i class='bx bx-home contact__icon' ></i>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__description">#123 Lima - Peru</span>
+                        </div>
+
+                        <div class="contact__box">
+                            <i class='bx bx-phone contact__icon' ></i>
+                            <h3 class="contact__title">Phone</h3>
+                            <span class="contact__description">999-888-777</span>
+                        </div>
+
+                        <div class="contact__box">
+                            <i class='bx bx-envelope contact__icon' ></i>
+                            <h3 class="contact__title">Gmail</h3>
+                            <span class="contact__description">clayuser@email.com</span>
+                        </div>
+
+                        <div class="contact__box">
+                            <i class='bx bx-chat contact__icon' ></i>
+                            <h3 class="contact__title">Chat</h3>
                             <div>
-                                <h3 class="mb-4">Current location</h3>
-                                <p>Buenos Aires, Argentina</p>
+                                <a href="#" class="contact__social"><i class='bx bxl-whatsapp-square' ></i></a>
+                                <a href="#" class="contact__social"><i class='bx bxl-telegram' ></i></a>
+                                <a href="#" class="contact__social"><i class='bx bxl-messenger' ></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box text-center p-4">
-                            <div
-                                class="
-                                    icon
-                                    d-flex
-                                    align-items-center
-                                    justify-content-center
-                                "
-                            >
-                                <span class="icon-whatsapp"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">Contact Number</h3>
-                                <p>
-                                    <a href="https://wa.link/eh9txw"
-                                        >+54 2226 55-6250</a
-                                    >
-                                </p>
-                                <img
-                                    src="images/whatsapp_link.png"
-                                    alt="Whatsapp QR."
-                                    width="50px"
-                                    height="50px"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box text-center p-4">
-                            <div
-                                class="
-                                    icon
-                                    d-flex
-                                    align-items-center
-                                    justify-content-center
-                                "
-                            >
-                                <span class="icon-paper-plane"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">Email Address</h3>
-                                <p>
-                                    <a href="mailto:julianvazquez042@gmail.com"
-                                        >julianvazquez042@gmail.com</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box text-center p-4">
-                            <div
-                                class="
-                                    icon
-                                    d-flex
-                                    align-items-center
-                                    justify-content-center
-                                "
-                            >
-                                <span class="icon-github"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">Github</h3>
-                                <p>
-                                    <a href="https://github.com/jumjules42"
-                                        >jumjules42</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex ftco-animate mt-4">
-                        <div class="align-self-stretch box text-center p-4">
-                            <div
-                                class="
-                                    icon
-                                    d-flex
-                                    align-items-center
-                                    justify-content-center
-                                "
-                            >
-                                <span class="icon-linkedin"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">Linkedin</h3>
-                                <p>
-                                    <a
-                                        href="https://www.linkedin.com/in/julianvazquezdev/"
-                                        >julianvazquezdev</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact Section -->
 
-        <!-- Start Footer Section -->
-        <footer class="ftco-footer py-5">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with
-                            <i class="icon-heart" aria-hidden="true"></i> by
-                            <a href="https://colorlib.com" target="_blank"
-                                >Colorlib</a
-                            >
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Project" class="contact__input">
+                            <input type="number" placeholder="Number" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+                        <input type="submit" value="Send Message" class="button contact__button">
+                    </form>
                 </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__container bd-container">
+                <h1 class="footer__title">Clay Doe</h1>
+                <p class="footer__description">I am Clay Doe and this is my personal website, consult me here..</p>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#" class="footer__link"><i class='bx bxl-github' ></i></a>
+                    <a href="#" class="footer__link"><i class='bx bxl-dribbble' ></i></a>
+                </div>
+                <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
             </div>
         </footer>
-        <!-- End Footer Section -->
-
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen">
-            <svg class="circular" width="48px" height="48px">
-                <circle
-                    class="path-bg"
-                    cx="24"
-                    cy="24"
-                    r="22"
-                    fill="none"
-                    stroke-width="4"
-                    stroke="#eeeeee"
-                />
-                <circle
-                    class="path"
-                    cx="24"
-                    cy="24"
-                    r="22"
-                    fill="none"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
-                    stroke="#F96D00"
-                />
-            </svg>
-        </div>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.animateNumber.min.js"></script>
-        <script src="js/scrollax.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-        <script src="js/google-map.js"></script>
-        <script src="js/main.js"></script>
+        
+        <!-- ===== MIXITUP FILTER ===== -->
+        <script src="assets/js/mixitup.min.js"></script>
+        
+        <!-- ===== SWIPER JS ===== -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!-- ===== GSAP ===== -->
+        <script src="assets/js/gsap.min.js"></script>
+        
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
