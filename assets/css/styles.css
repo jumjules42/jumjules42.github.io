@@ -426,6 +426,17 @@ img {
     text-align: center;
     transition: 0.4s;
     box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.services__data svg {
+    fill: var(--first-color);
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--first-color);
 }
 
 .services__data:hover {
@@ -443,12 +454,29 @@ img {
     font-size: 3rem;
 }
 
+.services__icon-tech {
+    font-size: 1.8rem;
+    color: var(--first-color);
+    text-align: left;
+}
+
+.services__icon-img {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
 .services__title {
     font-size: var(--h3-font-size);
 }
 
 .services__description {
     margin-bottom: var(--mb-4);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /*===== PROJECT IN MIND =====*/
